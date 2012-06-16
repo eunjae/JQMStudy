@@ -1,0 +1,218 @@
+<!DOCTYPE html> 
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width height=device-height" charset="utf-8">
+<title>JQM Study</title>
+<link href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" 
+	rel="stylesheet" type="text/css"/>
+<script src="http://code.jquery.com/jquery-1.6.4.min.js" 
+	type="text/javascript"></script>
+<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js" 
+	type="text/javascript"></script>
+
+<!--
+<style type="text/css">
+.center
+{
+	margin:auto;
+    width:70%
+}
+</style>
+-->
+
+<script type="text/javascript">
+function sleep(milliSeconds)
+{
+	var startTime = new Date().getTime();
+	while (new Date().getTime() < startTime + milliSeconds);
+}
+
+function callNotWorker()
+{
+	sleep(10000);
+}
+</script>
+
+</head> 
+
+
+
+<body> 
+
+<!-- log in page -->
+<div data-role="page" id="home">
+	<div data-role="header" class="ui-header">
+		<h1>LOG IN</h1>
+	</div>
+	
+    <div data-role="content" class="center">	
+		<center><img src="http://www.w3schools.com/images/pulpit.jpg" /></center>
+	</div>
+    
+    <div data-role="content">	
+    	<div data-role="fieldcontain">
+            <label for="name" class="ui-input-text">ID</label>
+            <input type="text" name="identification" />
+        
+            <label for="password" class="ui-input-text">PW</label>
+            <input type="password" name="password" />
+        </div>
+        <a href="#profile" data-role="button" data-icon="check">Log in</a>
+        <a href="#create" data-role="button" data-icon="plus">Create ID</a>
+	</div>
+
+	<div data-role="footer" class="ui-footer">
+		<h4>eunjae</h4>
+	</div>
+</div>
+
+<!-- Profile Page -->
+<div data-role="page" id="profile" >
+	<div data-role="header" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+        	<ul>
+                <li><a href="#profile" data-transition="none"
+                	class="ui-btn-active ui-state-persist">
+                	Profile</a></li>
+                <li><a href="#video" data-transition="none">
+                	Video</a></li>
+                <li><a href="#fvideo" data-transition="none">
+                	Favorite Video</a></li>
+                <li><a href="#social" data-transition="none">
+                	Social Group</a></li>
+            </ul>
+		</div>
+	</div>
+    
+    <div data-role="content" id="profile">
+        Profile Page<br />
+        Profile Page<br />
+        Profile Page<br />
+        Profile Page<br />
+        Profile Page<br />
+        Profile Page<br />
+	</div>
+    
+	<div data-role="footer" align="center">
+		<a href="#home" data-role="button" data-rel="home" data-theme="b">home</a>
+	</div>
+</div>
+
+<!-- Video Page -->
+<div data-role="page" id="video" >
+	<div data-role="header" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+        	<ul>
+                <li><a href="#profile" data-transition="none">
+                	Profile</a></li>
+                <li><a href="#video" data-transition="none" 
+                	class="ui-btn-active ui-state-persist">
+                	Video</a></li>
+                <li><a href="#fvideo" data-transition="none">
+                	Favorite Video</a></li>
+                <li><a href="#social" data-transition="none">
+                	Social Group</a></li>
+            </ul>
+		</div>
+	</div>
+    
+    <div data-role="content" id="profile">
+        Video Page<br />
+        Video Page<br />
+        Video Page<br />
+        Video Page<br />
+        Video Page<br />
+        Video Page
+	</div>
+    
+	<div data-role="footer" align="center">
+		<a href="#home" data-role="button" data-rel="home" data-theme="b">home</a>
+	</div>
+</div>
+
+<!-- Favorite Video Page -->
+<div data-role="page" id="fvideo" >
+	<div data-role="header" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+        	<ul>
+                <li><a href="#profile" data-transition="none">
+                	Profile</a></li>
+                <li><a href="#video" data-transition="none">
+                	Video</a></li>
+                <li><a href="#fvideo" data-transition="none"
+                	class="ui-btn-active ui-state-persist">
+                	Favorite Video</a></li>
+                <li><a href="#social" data-transition="none">
+                	Social Group</a></li>
+            </ul>
+		</div>
+	</div>
+    
+    <div data-role="content" id="profile">
+        Favorite Video Page<br />
+        Favorite Video Page<br />
+        Favorite Video Page<br />
+        Favorite Video Page<br />
+        Favorite Video Page<br />
+        Favorite Video Page<br />
+	</div>
+    
+	<div data-role="footer" align="center">
+		<a href="#home" data-role="button" data-rel="home" data-theme="b">home</a>
+	</div>
+</div>
+
+<!-- Social Group Page -->
+<div data-role="page" id="social" >
+	<div data-role="header" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+        	<ul>
+                <li><a href="#profile" data-transition="none">
+                	Profile</a></li>
+                <li><a href="#video" data-transition="none">
+                	Video</a></li>
+                <li><a href="#fvideo" data-transition="none">
+                	Favorite Video</a></li>
+                <li><a href="#social" data-transition="none"
+                	class="ui-btn-active ui-state-persist">
+                	Social Group</a></li>
+            </ul>
+		</div>
+	</div>
+    
+    <div data-role="content" id="profile">
+        Social Group Page<br />
+        Social Group Page<br />
+        Social Group Page<br />
+        Social Group Page<br />
+        Social Group Page<br />
+        Social Group Page<br />
+	</div>
+    
+	<div data-role="footer" align="center">
+		<a href="#home" data-role="button" data-rel="home" data-theme="b">home</a>
+	</div>
+</div>
+
+<!-- create ID page -->
+<div data-role="page" id="create">
+	<div data-role="header">
+		<h1>Create ID</h1>
+	</div>
+    
+	<div data-role="content">	
+		<form>
+        Username: <input type="text" name="name" />
+        E-mail Address: <input type="text" name="mail" />
+        Password: <input type="password" name="password" />
+        Confirm Password: <input type="password" name="password" />
+        <a href="#" data-role="button" data-inline="true" data-theme="e">Create an account</a>
+        </form>
+	</div>
+	
+    <div data-role="footer" align="center">
+		<a href="#home" data-role="button" date-rel="homr" data-theme="b">home</a>
+	</div>
+</div>
+
